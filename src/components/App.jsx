@@ -1,16 +1,18 @@
+import { Profile } from "./Profile/Profile";
+import { Statistics } from "./Statistics/Statistics";
+import { Friend } from './FriendList/FriendList';
+import profile from '../Json/user.json';
+import statistics from '../Json/data.json';
+import friends from '../Json/friends.json';
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Profile profile={profile} />
+      <Statistics statistics={statistics} title="upload text" />
+      <Friend friends={friends} />
+      {/* <TransactionHistory/> */}
+    </>
   );
 };
