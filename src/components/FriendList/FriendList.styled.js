@@ -6,7 +6,7 @@ flex-direction: column;
 margin-bottom: 50px;
 `;
 
-export const FriendItem = styled.li`
+export const FriendLi = styled.li`
 width: 200px;
 padding: 10px;
 border: 2px solid grey;
