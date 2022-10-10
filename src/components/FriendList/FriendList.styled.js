@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FriendList = styled.ul`
+export const FriendWrap = styled.ul`
 display: flex;
 flex-direction: column;
 margin-bottom: 50px;

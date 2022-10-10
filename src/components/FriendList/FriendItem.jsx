@@ -2,16 +2,14 @@
 
 
 
-export const OneFriend = ({ friends }) => {
-    return (
-         friends.map(({ avatar, name, isOnline, id }) => {
-            return (
-            <FriendItem key={id}>
+export const FriendListItem = ({ avatar, isOnline, name }) => {
+   return (
+            <FriendItem >
                 <FriendStatus status={isOnline} ></FriendStatus>
                 <FriendImg src={avatar} alt={name} width="48" />
                 <FriendName>{name}</FriendName>
             </FriendItem>
-            )
-        } )
-    )
+   )
+        
+    
    }

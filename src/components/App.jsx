@@ -1,7 +1,7 @@
 import { Profile } from "./Profile/Profile";
 import { Statistics } from "./Statistics/Statistics";
-import { Friend } from './FriendList/FriendList';
-import { TransactionHistory } from './Transaction/TransactionHistory';
+import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import { Conteiner } from './App.styled';
 import profile from '../Json/user.json';
 import statistics from '../Json/data.json';
@@ -14,8 +14,10 @@ export const App = () => {
     <Conteiner>
       <Profile profile={profile} />
       <Statistics statistics={statistics} title="upload text" />
-      <Friend friends={friends} />
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </Conteiner>
   );
 };
+
+
